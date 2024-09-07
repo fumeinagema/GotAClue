@@ -75,21 +75,22 @@ section {
 .menu-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 20px; /* Adds space between items */
+    justify-content: space-between; /* Aligns items evenly with space between */
 }
 
 .menu-item {
-    width: calc(50% - 20px);
-    margin-bottom: 20px;
+    flex: 1 1 calc(33.333% - 20px); /* Flex-grow and flex-shrink with basis */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    margin-bottom: 20px; /* Space below each item */
     text-align: center;
+    position: relative;
 }
 
 .menu-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 253.33px; /* Fixed width */
+    height: 189.98px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
     border-radius: 10px; /* Rounded corners for images */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
