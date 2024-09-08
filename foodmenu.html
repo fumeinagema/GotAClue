@@ -252,18 +252,5 @@
     <footer>
         <p>&copy; 2024 The Queen's Head</p>
     </footer>
-    <script>
-        window.addEventListener('scroll', function() {
-          const footer = document.querySelector('footer');
-          const rect = footer.getBoundingClientRect();
-          
-          // Check if the footer is fully visible in the viewport
-          if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-            setTimeout(function() {
-              window.location.href = 'index.html'; // Redirect back to index page
-            }, 500);  // 500 milliseconds = 0.5 seconds
-          }
-        });
-      </script>
 </body>
 </html>
