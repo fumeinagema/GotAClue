@@ -20,9 +20,12 @@ header {
 
 #site-name {
     color: #ff4081; /* Pink color for a striking effect */
-    font-size: 45px;
-    display: flex;
-    justify-content: center;
+    font-size: 55px; /* Larger font for "The Queen's Head" */
+    text-align: center;
+}
+
+#site-name::first-line {
+    font-size: 25px; /* Smaller font for "Welcome to" */
 }
 
 h2 {
