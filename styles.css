@@ -1,7 +1,10 @@
 body {
     font-family: 'Georgia', serif;
-    font-weight: 400;
-    background-color: #1e1e1e;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark background for a modern look */
+    color: #fff; /* White text for contrast */
 }
   
   header, footer {
@@ -16,11 +19,14 @@ body {
   }
   
   #site-name {
-      color: #ff4081; /* Pink color for a striking effect */
-      font-size: 45px;
-      display: flex;
-      justify-content: center;
-  }
+    color: #ff4081; /* Pink color for a striking effect */
+    font-size: 55px; /* Larger font for "The Queen's Head" */
+    text-align: center;
+}
+
+#site-name::first-line {
+    font-size: 25px; /* Smaller font for "Welcome to" */
+}
   
   h2 {
       font-size: 1.8em; /* Slightly larger font size for h2 */
