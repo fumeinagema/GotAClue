@@ -56,5 +56,18 @@
     <footer>
         <p>&copy; 2024 The Queen's Head</p>
     </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+          const footer = document.querySelector('footer');
+          const footerPosition = footer.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+  
+          // Check if the footer is in the viewport (partially or fully visible)
+          if (footerPosition.top < viewportHeight && footerPosition.bottom > 0) {
+            // Navigate to the food menu page
+            window.location.href = 'foodmenu.html';
+          }
+        });
+      </script>
 </body>
 </html>
