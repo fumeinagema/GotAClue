@@ -59,13 +59,13 @@
     <script>
         window.addEventListener('scroll', function() {
           const footer = document.querySelector('footer');
-          const footerPosition = footer.getBoundingClientRect();
-          const viewportHeight = window.innerHeight;
-  
-          // Check if the footer is in the viewport (partially or fully visible)
-          if (footerPosition.top < viewportHeight && footerPosition.bottom > 0) {
-            // Navigate to the food menu page
-            window.location.href = 'foodmenu.html';
+          const rect = footer.getBoundingClientRect();
+          
+          // Check if the footer is fully visible in the viewport
+          if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            setTimeout(function() {
+              window.location.href = 'foodmenu.html'; // Redirect back to foodmenu page
+            }, 1500);  // 1.5 milliseconds = 1.5 seconds
           }
         });
       </script>
